@@ -68,7 +68,7 @@ const Hero = () => {
                         <img
                             src={banner}
                             alt="Hero"
-                            className="rounded-lg scale-x-[-1] w-full mx-auto"
+                            className="w-full max-w-[400px] lg:max-w-full rounded-lg scale-x-[-1] mx-auto"
                         />
                     </motion.div>
                 </div>

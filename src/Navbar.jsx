@@ -4,7 +4,7 @@ import { MdMenuOpen } from 'react-icons/md';
 const Navbar = () => {
     return (
         <nav>
-            <div className="container py-10 flex justify-between items-center">
+            <div className="container py-4 md:py-10 flex justify-between items-center">
                 {/* logo */}
                 <div>
                     <img src={logo} alt="Logo" className="w-20" />
