@@ -1,4 +1,5 @@
 import logo from './logo.png';
+import banner from './banner.svg';
 
 const menuLinks = [
     {
@@ -22,10 +23,10 @@ const menuLinks = [
         url: '/team',
     },
     {
-        id: 3,
+        id: 5,
         title: 'Contact Us',
         url: '/contact',
     },
 ];
 
-export { logo, menuLinks };
+export { logo, menuLinks, banner };
