@@ -1,11 +1,10 @@
-function App() {
+import Navbar from './Navbar.jsx';
+const App = () => {
     return (
-        <div className="container p-8">
-            <button className="bg-blue-400 px-4 py-8 rounded-full text-white hover:text-gray-600">
-                Hover Me to check the outcome
-            </button>
-        </div>
+        <main className="overflow-x-hidden bg-white text-dark" >
+            <Navbar />;
+        </main>
     );
-}
+};
 
 export default App;
