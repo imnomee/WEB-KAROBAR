@@ -23,7 +23,7 @@ export const FadeUp = (delay) => {
 };
 const Hero = () => {
     return (
-        <section id="home">
+        <section id="home py-14">
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <motion.div

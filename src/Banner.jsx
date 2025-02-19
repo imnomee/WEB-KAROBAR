@@ -1,7 +1,5 @@
-import { GrUserExpert } from 'react-icons/gr';
 import { education } from './assets/assets';
-import { MdOutlineAccessTime } from 'react-icons/md';
-import { FaBookReader } from 'react-icons/fa';
+import { TbTargetArrow, TbWorld, TbGraph } from 'react-icons/tb';
 import { FadeUp } from './Hero';
 import { easeInOut, motion } from 'framer-motion';
 
@@ -24,10 +22,9 @@ const Banner = () => {
                         <motion.h1
                             initial={{ opacity: 0, scale: 0.5 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, ease: easeInOut }}
                             className="text-2xl md:text-4xl font-bold !leading-snug mb-4">
-                            The World&apos;s Leading Online Learning Software
-                            Platform
+                            What Sets Us Apart?
                         </motion.h1>
                     </div>
                     <div className="flex flex-col gap-4 ">
@@ -35,28 +32,34 @@ const Banner = () => {
                             variants={FadeUp(0.2)}
                             initial="initial"
                             whileInView={'animate'}
-                            transition={{ ease: easeInOut }}
+                            transition={{ duration: 0.3, ease: easeInOut }}
                             className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-primary hover:text-white hover:shadow-xl transition cursor-pointer">
-                            <FaBookReader className="text-2xl " />
-                            <p className="text-lg">10,000+ Courses</p>
+                            <TbTargetArrow className="text-2xl " />
+                            <p className="text-lg">
+                                Your Vision, Our Innovation
+                            </p>
                         </motion.div>
                         <motion.div
                             variants={FadeUp(0.4)}
                             initial="initial"
                             whileInView={'animate'}
-                            viewport={{ once: true }}
+                            transition={{ duration: 0.3, ease: easeInOut }}
                             className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-primary hover:text-white hover:shadow-xl transition cursor-pointer">
-                            <GrUserExpert className="text-2xl " />
-                            <p className="text-lg">expert Instructions</p>
+                            <TbWorld className="text-2xl " />
+                            <p className="text-lg">
+                                Empowering Entrepreneurs & Enterprises
+                            </p>
                         </motion.div>
                         <motion.div
                             variants={FadeUp(0.6)}
                             initial="initial"
                             whileInView={'animate'}
-                            viewport={{ once: true }}
+                            transition={{ duration: 0.3, ease: easeInOut }}
                             className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-primary hover:text-white hover:shadow-xl transition cursor-pointer">
-                            <MdOutlineAccessTime className="text-2xl " />
-                            <p className="text-lg">Lifetime Access</p>
+                            <TbGraph className="text-2xl " />
+                            <p className="text-lg">
+                                Beyond Development—We Help You Scale
+                            </p>
                         </motion.div>
                     </div>
                 </div>
