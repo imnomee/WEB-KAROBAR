@@ -1,5 +1,6 @@
 import logo from './logo.png';
 import banner from './progressive_app.svg';
+import education from './education.svg';
 
 const menuLinks = [
     {
@@ -32,16 +33,10 @@ const menuLinks = [
 import {
     TbWorldWww,
     TbDeviceDesktop,
-    TbLayout,
-    TbShoppingCart,
     TbSearch,
     TbTools,
-    TbBrandGoogleAnalytics,
     TbCode,
-    TbBrandWordpress,
     TbCloudComputing,
-    TbRocket,
-    TbChartPie,
 } from 'react-icons/tb';
 
 const services = [
@@ -89,4 +84,4 @@ const services = [
     },
 ];
 
-export { logo, menuLinks, banner, services };
+export { logo, menuLinks, banner, services, education };

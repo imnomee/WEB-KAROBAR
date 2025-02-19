@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { easeInOut, motion } from 'framer-motion';
 import { services } from './assets/assets.js';
 
 const Services = () => {
@@ -13,9 +13,14 @@ const Services = () => {
                         <motion.div
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: service.delay }}
+                            transition={{
+                                duration: 0.6,
+                                delay: service.delay,
+                                ease: easeInOut,
+                            }}
+                            viewport={{ once: true }}
                             key={service.id}
-                            className="bg-[#f4f4f4] rounded-2xl flex  flex-col items-center min-h-32 p-3 hover:bg-secondary hover:shadow-2xl hover:text-primary hover:scale-105 transition-all select-none cursor-pointer group">
+                            className="bg-[#f4f4f4] rounded-2xl flex  flex-col items-center min-h-32 p-3 hover:bg-primary hover:shadow-2xl hover:text-white hover:scale-105 transition-all select-none cursor-pointer group">
                             <div className="text-4xl mb-3 group-hover:-rotate-12 transition">
                                 {service.icon()}
                             </div>

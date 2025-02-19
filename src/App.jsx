@@ -1,3 +1,4 @@
+import Banner from './Banner.jsx';
 import Hero from './Hero.jsx';
 import Navbar from './Navbar.jsx';
 import Services from './Services.jsx';
@@ -7,6 +8,7 @@ const App = () => {
             <Navbar />;
             <Hero />;
             <Services />
+            <Banner />
         </main>
     );
 };
