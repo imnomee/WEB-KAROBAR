@@ -1,10 +1,14 @@
+import { motion } from 'framer-motion';
 import { logo, menuLinks } from './assets/assets.js';
 import { MdMenuOpen } from 'react-icons/md';
 
 const Navbar = () => {
     return (
         <nav>
-            <div className="container py-4 md:py-10 flex justify-between items-center">
+            <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="container py-4 md:py-10 flex justify-between items-center">
                 {/* logo */}
                 <div>
                     <img src={logo} alt="Logo" className="w-20" />
@@ -33,7 +37,7 @@ const Navbar = () => {
                         <MdMenuOpen />
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </nav>
     );
 };

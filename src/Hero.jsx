@@ -23,15 +23,15 @@ export const FadeUp = (delay) => {
 };
 const Hero = () => {
     return (
-        <section>
+        <section id="home">
             <div className="container">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <motion.div
                         variants={FadeUp(0.4)}
                         initial="initial"
                         animate="animate"
-                        className="flex flex-col justify-center items-center relative z-10 order-2 md:order-1">
-                        <div className="text-center md:text-left space-y-4 lg:max-w-[500px]">
+                        className="flex flex-col justify-center relative z-10 order-2 md:order-1">
+                        <div className="text-center md:text-left space-y-2 lg:max-w-[500px]">
                             <h1 className="text-2xl lg:text-4xl font-bold">
                                 <span className="text-primary">Web</span>
                                 <span className="text-secondary inline-block lg:pb-2">
@@ -57,7 +57,7 @@ const Hero = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        initial={{ x: 50, opacity: 0 }}
+                        initial={{ x: -50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{
                             duration: 0.6,
