@@ -1,6 +1,7 @@
 import logo from './logo.png';
 import banner from './progressive_app.svg';
 import education from './education.svg';
+import subscribe from './subscribe.svg';
 
 const menuLinks = [
     {
@@ -84,4 +85,4 @@ const services = [
     },
 ];
 
-export { logo, menuLinks, banner, services, education };
+export { logo, menuLinks, banner, services, education, subscribe };

@@ -23,7 +23,7 @@ export const FadeUp = (delay) => {
 };
 const Hero = () => {
     return (
-        <section id="home py-14">
+        <section id="home" className="py-14 bg-amber-50">
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <motion.div
@@ -31,7 +31,7 @@ const Hero = () => {
                         initial="initial"
                         animate="animate"
                         className="flex flex-col justify-center relative z-10 order-2 md:order-1">
-                        <div className="text-center md:text-left space-y-2 lg:max-w-[500px]">
+                        <div className="text-center md:text-left lg:max-w-[500px]">
                             <h1 className="text-2xl lg:text-4xl font-bold">
                                 <span className="text-primary">Web</span>
                                 <span className="text-secondary inline-block lg:pb-2">
@@ -50,7 +50,7 @@ const Hero = () => {
                                 variants={FadeUp(0.6)}
                                 animate="animate"
                                 initial="initial"
-                                className="primary-btn flex items-center gap-2 group mx-auto md:mx-0 py-4">
+                                className="primary-btn flex items-center gap-2 group mx-auto md:mx-0 py-4 mt-10">
                                 Get In Touch
                                 <FaArrowRightLong className="group-hover:translate-x-2 group-hover:-rotate-45 transition-all" />
                             </motion.button>

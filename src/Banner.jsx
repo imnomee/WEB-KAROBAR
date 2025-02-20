@@ -34,8 +34,8 @@ const Banner = () => {
                             whileInView={'animate'}
                             transition={{ duration: 0.3, ease: easeInOut }}
                             className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-primary hover:text-white hover:shadow-xl transition cursor-pointer">
-                            <TbTargetArrow className="text-2xl " />
-                            <p className="text-lg">
+                            <TbTargetArrow className="text-4xl " />
+                            <p className="text-lg md:text-xl">
                                 Your Vision, Our Innovation
                             </p>
                         </motion.div>
@@ -45,8 +45,8 @@ const Banner = () => {
                             whileInView={'animate'}
                             transition={{ duration: 0.3, ease: easeInOut }}
                             className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-primary hover:text-white hover:shadow-xl transition cursor-pointer">
-                            <TbWorld className="text-2xl " />
-                            <p className="text-lg">
+                            <TbWorld className="text-4xl " />
+                            <p className="text-lg  md:text-xl">
                                 Empowering Entrepreneurs & Enterprises
                             </p>
                         </motion.div>
@@ -56,8 +56,8 @@ const Banner = () => {
                             whileInView={'animate'}
                             transition={{ duration: 0.3, ease: easeInOut }}
                             className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-primary hover:text-white hover:shadow-xl transition cursor-pointer">
-                            <TbGraph className="text-2xl " />
-                            <p className="text-lg">
+                            <TbGraph className="text-4xl " />
+                            <p className="text-lg  md:text-xl">
                                 Beyond Development—We Help You Scale
                             </p>
                         </motion.div>
