@@ -119,6 +119,7 @@ export default function Layout() {
                                 {menuItems.map((item) => (
                                     <li key={item.path}>
                                         <Link
+                                            onClick={() => scroll(0, 0)}
                                             to={item.path}
                                             className="text-gray-400 hover:text-white transition-colors">
                                             {item.label}

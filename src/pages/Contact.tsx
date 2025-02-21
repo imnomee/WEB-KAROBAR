@@ -59,7 +59,7 @@ export default function Contact() {
                                 icon: <MapPin className="h-6 w-6" />,
                                 title: 'Location',
                                 content: 'Kamalabad, Rawalpindi, Pakistan',
-                                link: 'https://maps.google.com/?q=Kamalabad,Rawalpindi,Pakistan',
+                                link: 'https://maps.google.com/?q=Aslam+Market,Kamalabad,Rawalpindi,Pakistan',
                             },
                             {
                                 icon: <Clock className="h-6 w-6" />,
@@ -182,12 +182,10 @@ export default function Contact() {
                             transition={{ duration: 0.6 }}
                             className="h-[600px] rounded-lg overflow-hidden shadow-lg">
                             <iframe
-                                title="Office Location"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.308451402862!2d73.0476!3d33.6007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95906a03cfff%3A0x2b2f1c1c99b676ce!2sKamalabad%2C%20Rawalpindi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                                title="KarobarWeb"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574.8854605815644!2d73.03584142760414!3d33.57379764120367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9371293ce2db%3A0x535c22db545b647a!2sWeb%20Mobiles%20Repairing%2C%20Software%20and%20Accessories!5e0!3m2!1sen!2s!4v1740145854330!5m2!1sen!2s"
                                 width="100%"
                                 height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen
                                 loading="lazy"></iframe>
                         </motion.div>
                     </div>
