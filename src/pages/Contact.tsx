@@ -12,14 +12,14 @@ export default function Contact() {
     return (
         <>
             <Helmet>
-                <title>Contact Us - KarobarWeb | Get in Touch</title>
+                <title>Contact Us - WebKarobar | Get in Touch</title>
                 <meta
                     name="description"
-                    content="Contact KarobarWeb for your web development needs. We're here to help transform your digital presence."
+                    content="Contact WebKarobar for your web development needs. We're here to help transform your digital presence."
                 />
                 <meta
                     name="keywords"
-                    content="contact KarobarWeb, web development contact, get in touch, development agency contact"
+                    content="contact WebKarobar, web development contact, get in touch, development agency contact"
                 />
                 <link rel="canonical" href="/contact" />
             </Helmet>
@@ -52,8 +52,8 @@ export default function Contact() {
                             {
                                 icon: <Mail className="h-6 w-6" />,
                                 title: 'Email',
-                                content: 'contact@KarobarWeb.com',
-                                link: 'mailto:contact@KarobarWeb.com',
+                                content: 'contact@WebKarobar.com',
+                                link: 'mailto:contact@WebKarobar.com',
                             },
                             {
                                 icon: <MapPin className="h-6 w-6" />,
@@ -182,7 +182,7 @@ export default function Contact() {
                             transition={{ duration: 0.6 }}
                             className="h-[600px] rounded-lg overflow-hidden shadow-lg">
                             <iframe
-                                title="KarobarWeb"
+                                title="WebKarobar"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574.8854605815644!2d73.03584142760414!3d33.57379764120367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9371293ce2db%3A0x535c22db545b647a!2sWeb%20Mobiles%20Repairing%2C%20Software%20and%20Accessories!5e0!3m2!1sen!2s!4v1740145854330!5m2!1sen!2s"
                                 width="100%"
                                 height="100%"

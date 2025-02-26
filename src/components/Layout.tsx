@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, Code2, Phone } from 'lucide-react';
+import { Menu, X, Code2, Phone, Mail } from 'lucide-react';
+
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Layout() {
@@ -23,7 +24,7 @@ export default function Layout() {
                         <Link to="/" className="flex items-center space-x-2">
                             <Code2 className="h-8 w-8 text-blue-600" />
                             <span className="text-xl font-bold text-gray-900">
-                                KarobarWeb
+                                WebKarobar
                             </span>
                         </Link>
 
@@ -33,7 +34,7 @@ export default function Layout() {
                                 <Link
                                     key={item.path}
                                     to={item.path}
-                                    className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                                    className={`text-base font-medium transition-colors hover:text-blue-600 ${
                                         location.pathname === item.path
                                             ? 'text-blue-600'
                                             : 'text-gray-600'
@@ -44,7 +45,7 @@ export default function Layout() {
                             <Link
                                 to="/contact"
                                 className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
-                                Get Started
+                                Get a Free Quote
                             </Link>
                         </div>
 
@@ -103,7 +104,7 @@ export default function Layout() {
                             <div className="flex items-center space-x-2 mb-4">
                                 <Code2 className="h-8 w-8 text-blue-400" />
                                 <span className="text-xl font-bold">
-                                    KarobarWeb
+                                    WebKarobar
                                 </span>
                             </div>
                             <p className="text-gray-400">
@@ -139,6 +140,10 @@ export default function Layout() {
                                     <Phone className="h-4 w-4" />
                                     <span>+92 335 276 5432</span>
                                 </p>
+                                <p className="flex items-center space-x-2">
+                                    <Mail className="h-4 w-4" />
+                                    <span>info@webkarobar.site</span>
+                                </p>
                             </div>
                         </div>
                         <div>
@@ -152,7 +157,7 @@ export default function Layout() {
                     </div>
                     <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
                         <p>
-                            &copy; {new Date().getFullYear()} KarobarWeb. All
+                            &copy; {new Date().getFullYear()} WebKarobar. All
                             rights reserved.
                         </p>
                     </div>

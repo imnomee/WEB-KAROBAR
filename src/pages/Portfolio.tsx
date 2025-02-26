@@ -61,7 +61,7 @@ export default function Portfolio() {
         <>
             <Helmet>
                 <title>
-                    Portfolio - KarobarWeb | Web Development Success Stories
+                    Portfolio - WebKarobar | Web Development Success Stories
                 </title>
                 <meta
                     name="description"
@@ -69,7 +69,7 @@ export default function Portfolio() {
                 />
                 <meta
                     name="keywords"
-                    content="web development portfolio, case studies, project showcase, KarobarWeb projects"
+                    content="web development portfolio, case studies, project showcase, WebKarobar projects"
                 />
                 <link rel="canonical" href="/portfolio" />
             </Helmet>

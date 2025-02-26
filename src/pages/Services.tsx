@@ -64,7 +64,7 @@ export default function Services() {
         <>
             <Helmet>
                 <title>
-                    Services & Pricing - KarobarWeb | Web Development Agency
+                    Services & Pricing - WebKarobar | Web Development Agency
                 </title>
                 <meta
                     name="description"
@@ -72,7 +72,7 @@ export default function Services() {
                 />
                 <meta
                     name="keywords"
-                    content="web development services, website pricing, digital solutions, KarobarWeb services"
+                    content="web development services, website pricing, digital solutions, WebKarobar services"
                 />
                 <link rel="canonical" href="/services" />
             </Helmet>

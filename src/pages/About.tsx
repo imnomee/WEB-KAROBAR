@@ -1,30 +1,24 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import {
-    Code2,
-    Users,
-    Rocket,
-    Target,
-    CheckCircle,
-    ArrowRight,
-} from 'lucide-react';
+import { Users, Rocket, Target, CheckCircle, ArrowRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import amjad from '../assets/amjad_farooq.jpg';
+import nauman from '../assets/nauman.jpg';
 
 const teamMembers = [
     {
-        name: 'John Smith',
+        name: 'Amjad Farooq',
         role: 'Founder & CEO',
-        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400',
+        image: amjad,
         bio: 'With over 15 years of experience in web development and digital strategy.',
     },
     {
-        name: 'Sarah Johnson',
+        name: 'Noman Rafiq',
         role: 'Lead Developer',
-        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400',
+        image: nauman,
         bio: 'Expert in full-stack development and cloud architecture.',
     },
     {
-        name: 'Michael Chen',
+        name: 'M. Usman Rafique',
         role: 'UI/UX Designer',
         image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
         bio: 'Creating beautiful and intuitive user experiences for over 8 years.',
@@ -63,15 +57,15 @@ export default function About() {
         <>
             <Helmet>
                 <title>
-                    About Us - KarobarWeb | Your Trusted Web Development Partner
+                    About Us - WebKarobar | Your Trusted Web Development Partner
                 </title>
                 <meta
                     name="description"
-                    content="Learn about KarobarWeb's journey, our team of experts, and our commitment to delivering exceptional web development solutions."
+                    content="Learn about WebKarobar's journey, our team of experts, and our commitment to delivering exceptional web development solutions."
                 />
                 <meta
                     name="keywords"
-                    content="about KarobarWeb, web development team, company values, digital agency"
+                    content="about WebKarobar, web development team, company values, digital agency"
                 />
                 <link rel="canonical" href="/about" />
             </Helmet>
@@ -81,7 +75,7 @@ export default function About() {
                 <section className="container mx-auto px-4 mb-20">
                     <div className="text-center max-w-3xl mx-auto">
                         <h1 className="text-4xl font-bold mb-6">
-                            About KarobarWeb
+                            About WebKarobar
                         </h1>
                         <p className="text-xl text-gray-600">
                             We're a team of passionate developers and designers
@@ -101,7 +95,7 @@ export default function About() {
                                 Our Story
                             </h2>
                             <p className="text-gray-600 mb-4">
-                                Founded in 2020, KarobarWeb emerged from a
+                                Founded in 2020, WebKarobar emerged from a
                                 vision to bridge the gap between businesses and
                                 the digital world. We understood that many
                                 companies struggled to establish a strong online
@@ -171,7 +165,7 @@ export default function About() {
                                         duration: 0.5,
                                         delay: index * 0.1,
                                     }}
-                                    className="bg-white p-6 rounded-lg shadow-lg">
+                                    className="bg-white p-6 rounded-lg shadow-lg flex items-center flex-col text-center">
                                     <div className="mb-4">{value.icon}</div>
                                     <h3 className="text-xl font-bold mb-2">
                                         {value.title}
@@ -204,7 +198,7 @@ export default function About() {
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-full h-64 object-cover"
+                                    className="w-full h-96 object-contain"
                                 />
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold mb-2">
