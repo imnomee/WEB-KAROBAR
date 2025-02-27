@@ -1,56 +1,7 @@
 import { motion } from 'framer-motion';
-import { Users, Rocket, Target, CheckCircle, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-import amjad from '../assets/amjad_farooq.jpg';
-import nauman from '../assets/nauman.jpg';
-
-const teamMembers = [
-    {
-        name: 'Amjad Farooq',
-        role: 'Founder & CEO',
-        image: amjad,
-        bio: 'With over 15 years of experience in web development and digital strategy.',
-    },
-    {
-        name: 'Noman Rafiq',
-        role: 'Lead Developer',
-        image: nauman,
-        bio: 'Expert in full-stack development and cloud architecture.',
-    },
-    {
-        name: 'M. Usman Rafique',
-        role: 'UI/UX Designer',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
-        bio: 'Creating beautiful and intuitive user experiences for over 8 years.',
-    },
-];
-
-const values = [
-    {
-        icon: <Users className="h-8 w-8 text-blue-600" />,
-        title: 'Client-Focused',
-        description:
-            'Your success is our priority. We work closely with you to understand and meet your needs.',
-    },
-    {
-        icon: <Rocket className="h-8 w-8 text-blue-600" />,
-        title: 'Innovation',
-        description:
-            'We stay ahead of technology trends to deliver cutting-edge solutions.',
-    },
-    {
-        icon: <Target className="h-8 w-8 text-blue-600" />,
-        title: 'Excellence',
-        description:
-            'We maintain high standards in everything we do, from code quality to client communication.',
-    },
-    {
-        icon: <CheckCircle className="h-8 w-8 text-blue-600" />,
-        title: 'Reliability',
-        description:
-            'Count on us to deliver projects on time and within budget, every time.',
-    },
-];
+import { teamMembers, values } from '../assets/assets';
 
 export default function About() {
     return (
@@ -166,7 +117,7 @@ export default function About() {
                                         delay: index * 0.1,
                                     }}
                                     className="bg-white p-6 rounded-lg shadow-lg flex items-center flex-col text-center">
-                                    <div className="mb-4">{value.icon}</div>
+                                    <div className="mb-4">{value.icon()}</div>
                                     <h3 className="text-xl font-bold mb-2">
                                         {value.title}
                                     </h3>

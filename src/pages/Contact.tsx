@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-
+import { contacts } from '../assets/assets';
 export default function Contact() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -42,31 +42,7 @@ export default function Contact() {
                 {/* Contact Information */}
                 <section className="container mx-auto px-4 mb-20">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            {
-                                icon: <Phone className="h-6 w-6" />,
-                                title: 'Phone',
-                                content: '+92 335 276 5432',
-                                link: 'tel:+923352765432',
-                            },
-                            {
-                                icon: <Mail className="h-6 w-6" />,
-                                title: 'Email',
-                                content: 'contact@WebKarobar.com',
-                                link: 'mailto:contact@WebKarobar.com',
-                            },
-                            {
-                                icon: <MapPin className="h-6 w-6" />,
-                                title: 'Location',
-                                content: 'Kamalabad, Rawalpindi, Pakistan',
-                                link: 'https://maps.google.com/?q=Aslam+Market,Kamalabad,Rawalpindi,Pakistan',
-                            },
-                            {
-                                icon: <Clock className="h-6 w-6" />,
-                                title: 'Business Hours',
-                                content: 'Mon - Fri: 9:00 - 18:00',
-                            },
-                        ].map((item, index) => (
+                        {contacts.map((item, index) => (
                             <motion.div
                                 key={item.title}
                                 initial={{ opacity: 0, y: 20 }}
@@ -77,7 +53,7 @@ export default function Contact() {
                                 }}
                                 className="bg-white p-6 rounded-lg shadow-lg text-center">
                                 <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-full mb-4">
-                                    {item.icon}
+                                    {item.icon()}
                                 </div>
                                 <h3 className="text-lg font-bold mb-2">
                                     {item.title}

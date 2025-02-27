@@ -1,63 +1,7 @@
 import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-const packages = [
-    {
-        name: 'Basic',
-        price: 'PKR 20,000',
-        description:
-            'Perfect for small businesses just starting their digital journey',
-        features: [
-            'Responsive Website Design',
-            'Up to 3 Pages',
-            'Basic SEO Setup',
-            'Contact Form',
-            'Mobile Optimization',
-            'Security Optimization',
-            '2 Free Revisions',
-        ],
-        highlighted: true,
-        note: '*Domain & Hosting Fees Not Included*',
-    },
-    {
-        name: 'Standard',
-        price: 'PKR 50,000',
-        description:
-            'Ideal for growing businesses needing more features and customization',
-        features: [
-            'Everything in Basic',
-            'Up to 10 Pages',
-            'Advanced SEO Package',
-            'WordPress or Custom CMS',
-            'Social Media Integration',
-            'Analytics Setup',
-            'E-commerce Lite (Up to 10 Products)',
-            'Speed Optimization',
-            '5 Free Revisions',
-        ],
-        note: '*Includes 1-Year Domain & Cloud Hosting*',
-    },
-    {
-        name: 'Premium',
-        price: 'PKR 90,000',
-        description: 'Complete digital solution for established businesses',
-        features: [
-            'Everything in Standard',
-            'Unlimited Pages',
-            'Custom Functionality',
-            'Full E-commerce Solution (Unlimited Products, Cart & Checkout)',
-            'Multiple Payment Gateways',
-            'Premium Hosting',
-            'Priority Support',
-            'Monthly Maintenance',
-            'Multilingual Support',
-            'Custom Admin Dashboard',
-            'Blog/News Section',
-            '10 Free Revisions',
-        ],
-        note: '*Includes 2-Year Domain & Cloud Hosting*',
-    },
-];
+import { packages } from '../assets/assets';
 
 export default function Services() {
     return (

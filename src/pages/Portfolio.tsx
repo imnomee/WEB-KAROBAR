@@ -3,46 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
-const projects = [
-    {
-        id: 1,
-        title: 'E-commerce Platform',
-        category: 'E-commerce',
-        image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800',
-        challenge:
-            'Outdated platform with poor user experience and low conversion rates.',
-        solution:
-            'Built a modern e-commerce solution with optimized checkout flow and mobile-first design.',
-        results:
-            '150% increase in mobile conversions, 40% reduction in cart abandonment.',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    },
-    {
-        id: 2,
-        title: 'Healthcare Portal',
-        category: 'Healthcare',
-        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
-        challenge:
-            'Complex patient management system with accessibility issues.',
-        solution:
-            'Developed an intuitive portal with focus on accessibility and HIPAA compliance.',
-        results:
-            '90% positive user feedback, 30% reduction in administrative time.',
-        technologies: ['React', 'TypeScript', 'PostgreSQL', 'AWS'],
-    },
-    {
-        id: 3,
-        title: 'Real Estate Platform',
-        category: 'Real Estate',
-        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
-        challenge: 'Inefficient property listing and search functionality.',
-        solution:
-            'Created a modern platform with advanced search and virtual tour features.',
-        results:
-            '200% increase in user engagement, 45% faster property search time.',
-        technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Google Maps API'],
-    },
-];
+import { projects } from '../assets/assets';
 
 const categories = ['All', 'E-commerce', 'Healthcare', 'Real Estate'];
 

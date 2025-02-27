@@ -1,20 +1,13 @@
 import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, Code2, Phone, Mail } from 'lucide-react';
+import { menuItems } from '../assets/assets';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Layout() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const location = useLocation();
-
-    const menuItems = [
-        { path: '/', label: 'Home' },
-        { path: '/services', label: 'Services' },
-        { path: '/portfolio', label: 'Portfolio' },
-        { path: '/about', label: 'About' },
-        { path: '/contact', label: 'Contact' },
-    ];
 
     return (
         <div className="min-h-screen flex flex-col">
