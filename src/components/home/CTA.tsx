@@ -6,7 +6,7 @@ const CTA: React.FC = () => {
     return (
         <section id="contact" className="py-20 bg-primary-600">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-3xl mx-auto text-center">
+                <div className="max-w-xl mx-auto text-center">
                     <motion.h2
                         className="text-3xl md:text-4xl font-bold text-white mb-4"
                         initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const CTA: React.FC = () => {
                     </motion.p>
 
                     <motion.div
-                        className="flex flex-col sm:flex-row justify-center gap-4"
+                        className="flex flex-col sm:flex-row justify-center gap-2"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}>
