@@ -15,12 +15,16 @@ import {
 import amjad from './amjad_farooq.jpg';
 import nauman from './nauman.jpg';
 
+
+/* Types */
+
 type ContactType = {
     icon: () => ReactElement;
     title: string;
     content: string;
     link?: string;
 };
+
 const contacts: ContactType[] = [
     {
         icon: () => <Phone className="h-6 w-6" />,
@@ -52,6 +56,7 @@ type Value = {
     title: string;
     description: string;
 };
+
 const values: Value[] = [
     {
         icon: () => <Users className="h-8 w-8 text-blue-600" />,
