@@ -90,6 +90,7 @@ const Education: React.FC = () => {
       subtitle="Expand your skills with our professional MERN stack courses and resources."
       centered
       dark
+      className="bg-gradient-to-b from-dark-900 to-dark-800"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {courses.map((course, index) => (
@@ -97,26 +98,27 @@ const Education: React.FC = () => {
             key={index}
             custom={index}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={courseCardVariants}
           >
-            <Card hoverable className="h-full">
+            <Card hoverable className="h-full group border-2 border-transparent hover:border-primary-400/50 transition-all duration-300">
               <Card.Image
                 src={course.image}
                 alt={course.title}
-                className="h-48"
+                className="h-48 group-hover:scale-105 transition-transform duration-300"
               />
               <Card.Content>
                 <div className="flex justify-between items-center mb-3">
-                  <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                  <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-lg">
                     {course.level}
                   </span>
-                  <div className="flex items-center text-dark-500 text-sm">
+                  <div className="flex items-center text-gray-400 text-sm font-medium">
                     <Clock size={14} className="mr-1" />
                     {course.duration}
                   </div>
                 </div>
-                <Card.Title>{course.title}</Card.Title>
+                <Card.Title className="group-hover:text-primary-600 transition-colors">{course.title}</Card.Title>
                 <Card.Description>{course.description}</Card.Description>
               </Card.Content>
               <Card.Footer>
@@ -127,6 +129,7 @@ const Education: React.FC = () => {
                   }}
                   variant="primary" 
                   fullWidth
+                  className="bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 shadow-lg transform hover:scale-105 transition-all duration-300"
                 >
                   Learn More
                 </Button>
@@ -136,9 +139,12 @@ const Education: React.FC = () => {
         ))}
       </div>
 
-      <div className="bg-dark-800 rounded-xl p-8 md:p-12">
-        <h3 className="text-2xl font-bold text-white mb-8 text-center">
-          Why Choose Our Educational Program?
+      <div className="bg-gradient-to-br from-dark-800/80 to-primary-950/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-primary-500/20 shadow-2xl">
+        <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          Why Choose Our{' '}
+          <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
+            Educational Program?
+          </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
@@ -146,15 +152,16 @@ const Education: React.FC = () => {
               key={index}
               custom={index}
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={featureVariants}
-              className="text-center"
+              className="text-center group"
             >
-              <div className="flex items-center justify-center w-16 h-16 bg-primary-900 bg-opacity-50 rounded-full text-primary-400 mx-auto mb-4">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl text-white mx-auto mb-4 shadow-lg shadow-primary-500/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 {feature.icon}
               </div>
-              <h4 className="text-lg font-bold text-white mb-2">{feature.title}</h4>
-              <p className="text-dark-300">{feature.description}</p>
+              <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary-400 transition-colors">{feature.title}</h4>
+              <p className="text-gray-300">{feature.description}</p>
             </motion.div>
           ))}
         </div>
@@ -165,6 +172,7 @@ const Education: React.FC = () => {
               section?.scrollIntoView({ behavior: 'smooth' });
             }}
             size="large"
+            className="bg-white text-primary-900 hover:bg-gray-100 shadow-xl shadow-white/20 transform hover:scale-105 transition-all duration-300 font-semibold"
           >
             Browse All Courses
           </Button>

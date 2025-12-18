@@ -70,22 +70,27 @@ const Consultation: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <motion.div
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
+                    viewport={{ once: true }}
                     variants={containerVariants}>
                     <motion.span
-                        className="inline-block px-4 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium mb-6"
+                        className="inline-flex items-center px-5 py-2 bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-800 rounded-full text-sm font-semibold mb-6 border border-primary-200"
                         variants={itemVariants}>
+                        <CheckCircle size={16} className="mr-2" />
                         Expert Consultation
                     </motion.span>
 
                     <motion.h2
-                        className="text-2xl md:text-4xl font-bold mb-6 text-dark-900"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-dark-900"
                         variants={itemVariants}>
-                        Get Professional Guidance for Your Web Projects
+                        Get Professional Guidance for Your{' '}
+                        <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+                            Web Projects
+                        </span>
                     </motion.h2>
 
                     <motion.p
-                        className="text-base text-dark-600 mb-8"
+                        className="text-lg text-dark-600 mb-8 leading-relaxed"
                         variants={itemVariants}>
                         Our consultation services provide expert advice and
                         strategic planning to ensure your web development
@@ -105,9 +110,9 @@ const Consultation: React.FC = () => {
                                     variants={itemVariants}>
                                     <CheckCircle
                                         size={20}
-                                        className="text-success-600 mr-2 mt-1 flex-shrink-0"
+                                        className="text-success-600 mr-3 mt-1 flex-shrink-0"
                                     />
-                                    <span className="text-dark-700">
+                                    <span className="text-dark-700 font-medium">
                                         {benefit}
                                     </span>
                                 </motion.li>
@@ -122,7 +127,8 @@ const Consultation: React.FC = () => {
                                     document.getElementById('contact');
                                 section?.scrollIntoView({ behavior: 'smooth' });
                             }}
-                            size="large">
+                            size="large"
+                            className="bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 shadow-xl shadow-primary-500/30 transform hover:scale-105 transition-all duration-300">
                             Schedule a Consultation
                         </Button>
                     </motion.div>
@@ -132,15 +138,18 @@ const Consultation: React.FC = () => {
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white p-6 rounded-lg shadow-md border border-dark-100"
+                            className="group bg-white p-6 rounded-2xl shadow-lg border-2 border-transparent hover:border-primary-400/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
                             transition={{
                                 delay: index * 0.1 + 0.3,
                                 duration: 0.5,
                             }}>
-                            <div className="mb-4">{service.icon}</div>
-                            <h3 className="text-xl font-bold mb-2 text-dark-900">
+                            <div className="mb-4 p-3 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl inline-flex group-hover:scale-110 transition-transform duration-300">
+                                {service.icon}
+                            </div>
+                            <h3 className="text-xl font-bold mb-2 text-dark-900 group-hover:text-primary-600 transition-colors">
                                 {service.title}
                             </h3>
                             <p className="text-dark-600">

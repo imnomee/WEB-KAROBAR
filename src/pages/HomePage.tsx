@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/home/Hero';
 import Services from '../components/home/Services';
+import Portfolio from '../components/home/Portfolio';
 import Education from '../components/home/Education';
 import Consultation from '../components/home/Consultation';
 import Testimonials from '../components/home/Testimonials';
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
       
       <Hero />
       <Services />
+      <Portfolio />
       <Education />
       <Consultation />
       <Testimonials />
