@@ -7,7 +7,6 @@ import Button from '../ui/Button';
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string;
   tags: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -17,7 +16,6 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
-  image,
   tags,
   liveUrl,
   githubUrl,
@@ -100,7 +98,6 @@ const Portfolio: React.FC = () => {
     {
       title: 'E-Commerce Platform',
       description: 'A full-featured online store with product management, shopping cart, secure checkout, and payment integration using Stripe.',
-      image: '/projects/ecommerce.jpg',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       liveUrl: '#',
       githubUrl: '#',
@@ -108,7 +105,6 @@ const Portfolio: React.FC = () => {
     {
       title: 'Task Management App',
       description: 'Collaborative project management tool with real-time updates, team collaboration, drag-and-drop interface, and analytics.',
-      image: '/projects/taskmanager.jpg',
       tags: ['React', 'Express', 'Socket.io', 'PostgreSQL'],
       liveUrl: '#',
       githubUrl: '#',
@@ -116,7 +112,6 @@ const Portfolio: React.FC = () => {
     {
       title: 'Social Media Dashboard',
       description: 'Analytics dashboard for social media metrics with data visualization, automated reports, and multi-platform integration.',
-      image: '/projects/dashboard.jpg',
       tags: ['React', 'Chart.js', 'REST API', 'Tailwind'],
       liveUrl: '#',
       githubUrl: '#',
@@ -124,7 +119,6 @@ const Portfolio: React.FC = () => {
     {
       title: 'Restaurant Booking System',
       description: 'Complete reservation system with table management, online booking, customer notifications, and POS integration.',
-      image: '/projects/restaurant.jpg',
       tags: ['MERN Stack', 'Redux', 'SMS API'],
       liveUrl: '#',
       githubUrl: '#',
@@ -132,7 +126,6 @@ const Portfolio: React.FC = () => {
     {
       title: 'Fitness Tracking App',
       description: 'Mobile-responsive fitness tracker with workout plans, progress monitoring, nutrition tracking, and social features.',
-      image: '/projects/fitness.jpg',
       tags: ['React Native', 'Node.js', 'MongoDB'],
       liveUrl: '#',
       githubUrl: '#',
@@ -140,7 +133,6 @@ const Portfolio: React.FC = () => {
     {
       title: 'Real Estate Platform',
       description: 'Property listing and search platform with advanced filters, virtual tours, agent dashboard, and CRM integration.',
-      image: '/projects/realestate.jpg',
       tags: ['Next.js', 'Prisma', 'PostgreSQL', 'Maps API'],
       liveUrl: '#',
       githubUrl: '#',
@@ -161,7 +153,6 @@ const Portfolio: React.FC = () => {
             key={index}
             title={project.title}
             description={project.description}
-            image={project.image}
             tags={project.tags}
             liveUrl={project.liveUrl}
             githubUrl={project.githubUrl}
