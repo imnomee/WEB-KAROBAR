@@ -47,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         
         {/* Overlay with links */}
         <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
-          {liveUrl && (
+          {liveUrl && liveUrl !== '#' && (
             <a
               href={liveUrl}
               target="_blank"
@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <ExternalLink size={20} />
             </a>
           )}
-          {githubUrl && (
+          {githubUrl && githubUrl !== '#' && (
             <a
               href={githubUrl}
               target="_blank"
