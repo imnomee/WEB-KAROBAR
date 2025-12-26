@@ -99,14 +99,14 @@ const Portfolio: React.FC = () => {
       title: 'Joblyk',
       description: 'A comprehensive job search and application platform connecting job seekers with employers. Features include job listings, application tracking, and profile management.',
       tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      liveUrl: 'https://github.com/imnomee/joblyk',
+      liveUrl: '#',
       githubUrl: 'https://github.com/imnomee/joblyk',
     },
     {
       title: 'Resume Builder',
       description: 'Professional resume builder application with customizable templates, real-time preview, and PDF export functionality for creating impressive resumes.',
       tags: ['React', 'JavaScript', 'CSS', 'PDF Generation'],
-      liveUrl: 'https://github.com/imnomee/resume-builder',
+      liveUrl: '#',
       githubUrl: 'https://github.com/imnomee/resume-builder',
     },
     {
@@ -120,7 +120,7 @@ const Portfolio: React.FC = () => {
       title: 'DairyMan',
       description: 'Dairy farm management system for tracking milk production, cattle management, inventory control, and financial records for dairy businesses.',
       tags: ['Node.js', 'MongoDB', 'Express', 'Dashboard'],
-      liveUrl: 'https://github.com/imnomee/dairyman',
+      liveUrl: '#',
       githubUrl: 'https://github.com/imnomee/dairyman',
     },
     {
