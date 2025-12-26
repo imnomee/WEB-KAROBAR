@@ -5,8 +5,8 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact DevStudio | Get in Touch</title>
-        <meta name="description" content="Contact DevStudio for web development services, education programs, or consultation. We're here to help with your digital needs." />
+        <title>Contact WebKarobar | Get in Touch</title>
+        <meta name="description" content="Contact WebKarobar for web development services, education programs, or consultation. We're here to help with your digital needs." />
       </Helmet>
       
       <div className="pt-24">

@@ -5,7 +5,7 @@ const EducationPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Educational Resources | DevStudio</title>
+        <title>Educational Resources | WebKarobar</title>
         <meta name="description" content="MERN stack courses, workshops, mentoring sessions, and educational resources for web developers." />
       </Helmet>
       

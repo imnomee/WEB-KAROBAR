@@ -5,7 +5,7 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Web Development Services | DevStudio</title>
+        <title>Web Development Services | WebKarobar</title>
         <meta name="description" content="Professional web development services including static websites, dynamic applications, e-commerce solutions, and custom API development." />
       </Helmet>
       

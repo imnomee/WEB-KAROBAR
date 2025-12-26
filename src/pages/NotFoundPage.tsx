@@ -7,7 +7,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | DevStudio</title>
+        <title>Page Not Found | WebKarobar</title>
       </Helmet>
       
       <div className="min-h-[80vh] flex items-center justify-center px-4">
