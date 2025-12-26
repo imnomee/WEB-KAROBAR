@@ -5,7 +5,7 @@ const ConsultationPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Consultation Services | DevStudio</title>
+        <title>Consultation Services | WebKarobar</title>
         <meta name="description" content="Expert web development consultation services including project scoping, technical consultations, code reviews, and architecture planning." />
       </Helmet>
       

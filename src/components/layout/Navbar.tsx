@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
                             }
                         />
                         <span className="ml-2 font-bold text-lg">
-                            DevStudio
+                            WebKarobar
                         </span>
                     </button>
 

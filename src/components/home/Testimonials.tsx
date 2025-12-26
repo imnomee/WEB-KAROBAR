@@ -7,7 +7,7 @@ const testimonials = [
     {
         id: 1,
         content:
-            'Working with DevStudio was an excellent experience. Their team delivered a complex e-commerce platform that exceeded our expectations, and their ongoing support has been invaluable.',
+            'Working with WebKarobar was an excellent experience. Their team delivered a complex e-commerce platform that exceeded our expectations, and their ongoing support has been invaluable.',
         author: 'Sarah Johnson',
         position: 'CEO, FashionStyle',
         image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -15,7 +15,7 @@ const testimonials = [
     {
         id: 2,
         content:
-            "The MERN stack course I took with DevStudio completely transformed my development skills. The instructors were knowledgeable, patient, and provided real-world insights that you can't get from books.",
+            "The MERN stack course I took with WebKarobar completely transformed my development skills. The instructors were knowledgeable, patient, and provided real-world insights that you can't get from books.",
         author: 'Michael Chang',
         position: 'Frontend Developer, TechSolutions',
         image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',

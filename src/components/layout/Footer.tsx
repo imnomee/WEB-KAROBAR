@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <Logo color="text-white" />
-              <span className="ml-2 font-bold text-xl">DevStudio</span>
+              <span className="ml-2 font-bold text-xl">WebKarobar</span>
             </div>
             <p className="text-dark-300 mb-4">
               Professional web development agency specializing in MERN stack solutions
@@ -129,12 +129,12 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin className="mr-2 text-primary-500 mt-1 flex-shrink-0" size={18} />
                 <span className="text-dark-300">
-                  123 Web Dev Lane, San Francisco, CA 94107
+                  Kamalabad, Tench Bhatta, Rawalpindi
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 text-primary-500 flex-shrink-0" size={18} />
-                <span className="text-dark-300">+1 (555) 123-4567</span>
+                <span className="text-dark-300">03321401023</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 text-primary-500 flex-shrink-0" size={18} />
@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-dark-400 text-sm">
-            &copy; {currentYear} DevStudio. All rights reserved.
+            &copy; {currentYear} WebKarobar. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0 text-sm">
             <Link to="/privacy" className="text-dark-400 hover:text-white transition-colors">

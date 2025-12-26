@@ -5,8 +5,8 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About DevStudio | Web Development Agency</title>
-        <meta name="description" content="Learn about DevStudio, our mission, values, and the team of expert web developers behind our success." />
+        <title>About WebKarobar | Web Development Agency</title>
+        <meta name="description" content="Learn about WebKarobar, our mission, values, and the team of expert web developers behind our success." />
       </Helmet>
       
       <div className="pt-24">

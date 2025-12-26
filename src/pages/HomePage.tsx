@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>DevStudio - Web Development Agency | MERN Stack Specialists</title>
+        <title>WebKarobar - Web Development Agency | MERN Stack Specialists</title>
         <meta name="description" content="Professional web development services, educational resources, and consultation. Specialists in MERN stack development." />
       </Helmet>
       
